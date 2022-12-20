@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  background-color: #333;
+  user-select: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+}
+
+.game {
+  /* width: 200vmin;
+  height: 50vmin; */
+  /* taken care of in javascript */
+  border: 1vmin solid #aaa;
+  /* margin: auto; */
+  background-color: #afe4de;
+  overflow: hidden;
+  position: relative;
+}
+
+.score,
+.hi-score,
+.start-message,
+.game-over {
+  position: absolute;
+  background-color: #afe4de;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 4vmin;
+}
+
+.score {
+  top: 1vmin;
+  right: 1vmin;
+}
+
+.start-message {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vmin;
+}
+
+.game-over {
+  top: 20%;
+  left: 45%;
+  transform: translate(-20%, -45%);
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 200%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+
+.dino,
+.cactus {
+  position: absolute;
+  background: none;
+  height: 30%;
+}
+
+.dino {
+  --bottom: 0;
+  left: 1%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
