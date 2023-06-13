@@ -80,3 +80,12 @@ body {
   bottom: 0;
   left: calc(var(--left) * 1%);
 }
+
+.footer {
+  display: flex;
+  font-size: small;
+  color: white;
+  position: fixed;
+  bottom: 1%;
+  left: 1%
+}
